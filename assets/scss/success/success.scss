@@ -1,0 +1,61 @@
+.hrSuccess {
+    &-bg-image {
+        background: url('~/assets/images/success.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        min-height: 90vh;
+    }
+    &-go-to {
+        font-size: 18px;
+        font-weight: $font-weight-bold;
+        color: $waterblue;
+    }
+    &-bg-button {
+        background: $white 0% 0% no-repeat padding-box;
+        border-radius: 60px;
+        width: 166px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s;
+        margin-top: 520px;
+        &:hover {
+            -ms-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+    }
+}
+
+.hrFailed {
+    &-bg-image {
+        background: url('~/assets/images/failed.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        min-height: 90vh;
+    }
+    &-go-to {
+        font-size: 18px;
+        font-weight: $font-weight-bold;
+        color: $waterblue;
+    }
+    &-bg-button {
+        background: $white 0% 0% no-repeat padding-box;
+        border-radius: 60px;
+        width: 166px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s;
+        margin-top: 520px;
+        &:hover {
+            -ms-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+    }
+}

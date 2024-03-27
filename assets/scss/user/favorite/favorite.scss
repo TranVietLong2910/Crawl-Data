@@ -1,0 +1,416 @@
+.hrFavorite {
+    &-display-sidebar {
+        @include screen(767) {
+            display: none;
+        }
+
+        @include screen(768991) {
+            display: none;
+        }
+    }
+
+    &-title {
+        .text-favorites {
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            color: $deepseablue;
+            text-transform: uppercase;
+        }
+
+        .text {
+            color: $cathedralgray;
+            font-size: 17px;
+            font-weight: $font-weight-bold;
+            text-transform: uppercase;
+
+            .tabs.active {
+                color: $waterblue;
+            }
+
+            .tabs {
+                color: $cathedralgray;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $waterblue;
+                }
+            }
+        }
+    }
+
+    &-top-popular {
+        .title-popular {
+            margin-top: 12px;
+            font-size: 15px;
+            font-weight: $font-weight-bold;
+            color: $black;
+            text-indent: 2px;
+        }
+
+        .popular-background {
+            background: $lightblue;
+            border-radius: 5px;
+            align-content: center;
+            display: flex;
+            margin: 10px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .popular {
+            line-height: 16px;
+            font-weight: $font-weight-bold;
+            font-size: 12px;
+            color: $black;
+        }
+
+        .icon-search {
+            margin-top: 3px;
+            font-size: 10px;
+        }
+    }
+
+    &-text-date {
+        font-size: 10px;
+        font-weight: $font-weight-medium;
+        color: #ACACAC;
+    }
+
+    &-date-color {
+        font-size: 11px;
+        font-weight: $font-weight-bold-seven;
+        color: $deepseablue;
+    }
+
+    &-search-group {
+        .input-keyword {
+            border-radius: 2px;
+            height: 45px;
+            width: 100%;
+            border: none;
+            padding-left: 30px;
+            font-size: 13px;
+            font-weight: $font-weight-bold;
+            color: $black;
+            border-radius: 5px;
+
+            &::placeholder {
+                color: $cathedralgray;
+            }
+        }
+
+        .button-submit {
+            background-color: $waterblue;
+            color: $white;
+            padding: 13px;
+            font-size: 13px;
+            border: none;
+            font-weight: $font-weight-medium;
+            white-space: nowrap;
+        }
+
+        .icon-search {
+            font-weight: $font-weight-bold-seven;
+            font-size: 13px;
+            color: $cathedralgray;
+            top: 14px;
+        }
+
+        .input-location {
+            &:deep(.vs__dropdown-toggle) {
+                border: none;
+                padding: 0px;
+                border-radius: 1px;
+                height: 45px;
+                width: 100%;
+                padding-left: 5px;
+                border-radius: 5px;
+
+                .vs__selected-options {
+                    .vs__search {
+                        margin-top: -1px;
+                        font-size: 13px;
+                        font-weight: $font-weight-bold;
+                        color: $cathedralgray;
+                    }
+
+                    .vs__selected {
+                        margin: 0;
+                        font-weight: $font-weight-bold;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    &-item-body {
+        background: $white;
+        border-radius: 15px;
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            margin: 20px;
+
+            @include screen(767) {
+                flex-direction: row;
+                grid-gap: 15px;
+            }
+
+
+
+            .flex-item-top {
+                background-color: #ffc500;
+                width: 50px;
+                height: 50px;
+                margin-top: -7px;
+                position: relative;
+                order: 2;
+                border-radius: 10px;
+
+                @include screen(767) {
+                    border-radius: 10px;
+                }
+            }
+
+            .flex-item-price {
+                background-color: $red;
+                width: 50px;
+                height: 50px;
+                order: 3;
+                margin-top: -6px;
+                border-radius: 0px 0px 10px 10px;
+
+                @include screen(767) {
+                    border-radius: 10px;
+                    margin-top: -7px;
+                }
+            }
+
+            .text-price {
+                text-align: center;
+                font-weight: $font-weight-bold-seven;
+                font-size: 10px;
+                color: $white;
+                text-transform: uppercase;
+            }
+
+            .text-rate {
+                text-align: center;
+                font-weight: $font-weight-bold-seven;
+                font-size: 10px;
+                color: $white;
+                text-transform: uppercase;
+            }
+
+            .icon-rate {
+                color: white;
+                font-size: 10px;
+                margin-top: 10px;
+            }
+
+            .icon-people {
+                color: $waterblue;
+                font-size: 30px;
+                margin-top: 10px;
+            }
+
+            .icon-price {
+                color: white;
+                font-size: 13px;
+                margin-top: 7px;
+            }
+        }
+
+        .title-table {
+            .text-title {
+                font-weight: $font-weight-bold-seven;
+                font-size: 17px;
+                color: $black;
+                text-transform: uppercase;
+
+                @include screen(991) {
+                    font-size: 14px;
+                }
+            }
+
+            .icon-people-fill {
+                font-size: 30px;
+                color: $cathedralgray;
+            }
+
+            .icon-heart {
+                color: $waterblue;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+
+        .bg-table-job {
+            .hr-table {
+                &:deep(.table-responsive) {
+                    .table {
+                        tbody {
+                            tr {
+                                background-color: $lightblue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bg-table-resource {
+            .hr-table {
+                &:deep(.table-responsive) {
+                    .table {
+                        tbody {
+                            tr {
+                                background-color: $whitesmoke;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .table {
+            .hr-table {
+                &:deep(.table-responsive) {
+                    .table {
+                        font-size: 13px;
+                        border-spacing: 0 9px;
+                        border-collapse: separate;
+
+                        th {
+                            border: none;
+                            text-align: center;
+                            font-size: 12px;
+                            font-weight: $font-weight-bold-seven;
+                            letter-spacing: 0.2px;
+                            color: $warmgray;
+                        }
+
+                        td {
+                            border: none;
+                            padding: 0.5rem;
+                        }
+
+                        tbody {
+                            tr {
+                                font-weight: $font-weight-bold-seven;
+                                font-size: 14px;
+                                color: $deepseablue;
+                                text-align: center;
+                            }
+
+                            tr td:first-child {
+                                border-top-left-radius: 5px;
+                                border-bottom-left-radius: 5px;
+                            }
+
+                            tr td:last-child {
+                                border-top-right-radius: 5px;
+                                border-bottom-right-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sub-skill {
+            .title {
+                font-size: 15px;
+                font-weight: $font-weight-bold;
+                color: $black;
+            }
+
+            .language {
+                border-radius: 50px;
+                margin: 5px;
+                padding: 5px 10px;
+                font-weight: $font-weight-bold;
+                font-size: 12px;
+                color: $white;
+                border: none;
+            }
+
+            .bg-skill {
+                background: $royalBlue;
+            }
+
+            .bg-language {
+                background: $canary;
+            }
+        }
+
+        .button-view {
+            .button-apply {
+                background: $deepseablue;
+                border-radius: 40px;
+                margin: 15px;
+                font-weight: $font-weight-bold-seven;
+                font-size: 13px;
+                color: $white;
+            }
+        }
+
+        .location {
+            .text-location {
+                color: $black;
+                font-weight: $font-weight-bold-seven;
+                font-size: 13px;
+                letter-spacing: 0.8px;
+            }
+
+            .text-deal {
+                font-size: 11px;
+                text-indent: 5px;
+                font-weight: bold;
+            }
+
+            .point-deal {
+                color: $deepseablue;
+                font-weight: bold;
+                font-size: 12px;
+            }
+
+            .icon-star {
+                color: $deepseablue;
+                font-size: 12px;
+            }
+
+            .text-rating {
+                font-size: 11px;
+                font-weight: bold;
+            }
+
+            .image-rank {
+                width: 40px;
+                height: 45px;
+                margin-right: 10px;
+                flex-shrink: 0;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .no-result {
+        font-weight: 600;
+        font-size: 16px;
+        color: $redorange;
+    }
+
+}

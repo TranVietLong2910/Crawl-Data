@@ -1,0 +1,862 @@
+.hrJobManagement {
+    .text-title {
+        font-weight: $font-weight-bold;
+        font-size: 22px;
+        letter-spacing: 1.2px;
+        color: $deepseablue;
+        text-transform: uppercase;
+    }
+
+    .item-body {
+        background: $white;
+        border-radius: 10px;
+    }
+
+    &-content {
+        transform-origin: top;
+        transition: transform 0.4s ease-in-out;
+
+        .search-account {
+            padding: 15px 20px;
+            gap: 275px;
+
+            .show-number-entries {
+                font-weight: $font-weight-medium;
+                color: $warmgray;
+
+                .select-option {
+                    color: $warmgray;
+                    border-radius: 5px;
+                    font-weight: $font-weight-medium;
+                }
+            }
+
+            .show-advanced-search {
+                .number-waiting {
+                    margin-right: 30px;
+                    background-color: $canary;
+                    border-radius: 10px;
+                    color: $white;
+                    padding: 5px 10px;
+                }
+
+                .btn-show {
+                    background-color: $waterblue;
+                    color: $white;
+                    border-radius: 10px;
+                    padding: 7px 10px;
+                    border: none;
+                }
+            }
+
+
+        }
+
+        .advanced-search {
+            column-gap: 60px;
+            row-gap: 20px;
+            padding: 0 20px;
+            transform-origin: top;
+            transition: transform 0.4s ease-in-out;
+
+            .item {
+                label {
+                    color: $waterblue;
+                    font-weight: $font-weight-medium;
+                }
+
+                input {
+                    border-radius: 10px;
+                    border-color: $cathedralgray;
+                    font-weight: $font-weight-medium;
+                    font-size: 14px;
+
+                    &::placeholder {
+                        color: $cathedralgray;
+                        font-weight: $font-weight-medium;
+                    }
+                }
+
+                .b-form-btn-label-control.form-control {
+                    flex-direction: row-reverse;
+                    border-radius: 10px;
+                    border-color: $cathedralgray;
+                }
+
+
+
+                .btn-search {
+                    background: $deepseablue;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 15px;
+
+                    svg {
+                        font-size: 13px;
+                    }
+                }
+
+                .btn-ads {
+                    background: $canary;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 15px;
+                }
+
+                .btn-clear {
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 15px;
+
+                    svg {
+                        font-size: 13px;
+                    }
+                }
+
+                .btn-remove {
+                    background: #FF3A3A;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 15px;
+
+                    svg {
+                        font-size: 13px;
+                    }
+                }
+
+                .b-form-datepicker {
+                    height: 35px;
+                }
+            }
+
+            .v-select {
+                &:deep(.vs__dropdown-toggle) {
+                    border-radius: 10px;
+                    border-color: $cathedralgray;
+                    color: $cathedralgray;
+                    font-weight: $font-weight-medium;
+                    font-size: 13px;
+                }
+            }
+
+            .button-submit {
+                gap: 5px;
+                margin-top: 35px;
+            }
+        }
+
+        .slide-enter,
+        .slide-leave-to {
+            transform: scaleY(0);
+        }
+    }
+
+    .accountStatistical {
+        border-radius: 10px;
+        background-color: $white;
+
+        &-header {
+            padding: 15px 20px;
+            border-bottom: 2px solid #f5f5f5;
+
+            &-left {
+                img {
+                    height: 18px;
+                    margin-right: 10px;
+                }
+
+                .title {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: $deepseablue;
+                    font-weight: 600;
+                }
+
+                .select-chart {
+                    min-width: 100px;
+                    width: auto;
+                    margin-left: 10px;
+                }
+
+                --vs-border-radius: 10px;
+                --vs-search-input-bg: #2680eb;
+                --vs-selected-color: #fff;
+                --vs-border-color: #fff;
+            }
+
+            &-right {
+                .iconUpDown {
+                    cursor: pointer;
+
+                    svg {
+                        padding: 5px;
+                        font-size: 30px;
+                        color: $deepseablue;
+                    }
+                }
+            }
+        }
+
+        &-content {
+            transform-origin: top;
+            transition: transform 0.4s ease-in-out;
+
+            .accountStatistical-detail {
+                border-radius: 10px;
+                background-color: #f9f9f9;
+                width: 80%;
+                margin: 30px auto;
+                padding: 20px 0;
+
+                @include screen(991) {
+                    flex-direction: column;
+                }
+
+                .items {
+                    width: calc(100% / 3);
+
+                    @include screen(991) {
+                        width: 100%;
+                        padding: 10px 0;
+                    }
+
+                    .title {
+                        color: #014783;
+                        font-weight: 600;
+                        margin-bottom: 30px;
+                    }
+
+                    .content {
+                        font-weight: bold;
+                        font-size: 30px;
+
+                        .number {
+                            font-size: 16px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        border-left: 2px solid #c3c3c3;
+                        border-right: 2px solid #c3c3c3;
+
+                        @include screen(991) {
+                            padding: 20px 0;
+                            border-left: none;
+                            border-right: none;
+                            border-top: 2px solid #c3c3c3;
+                            border-bottom: 2px solid #c3c3c3;
+                        }
+                    }
+                }
+            }
+
+            .accountStatistical-chart {
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #999191;
+                border-radius: 10px;
+
+                .chart-header {
+                    &-left {
+                        .title {
+                            color: #3d3d3d;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            font-size: 18px;
+                        }
+
+                        .subtitle {
+                            color: $pewterrgray;
+                        }
+                    }
+                }
+            }
+        }
+
+        .slide-enter,
+        .slide-leave-to {
+            transform: scaleY(0);
+        }
+    }
+
+    &-header {
+        padding: 15px 20px;
+        border-bottom: 2px solid $mediumpink;
+
+        .hrJobManagement-header-left {
+            .title {
+                font-size: 18px;
+                text-transform: uppercase;
+                color: $deepseablue;
+                font-weight: 600;
+            }
+        }
+
+        .hrJobManagement-header-right {
+            .btnNewAccount {
+                background-color: #e4f0ff;
+                color: $deepseablue;
+                font-size: 14px;
+                font-weight: 600;
+                border-radius: 10px;
+                border: none;
+                margin-right: 20px;
+
+                &:hover {
+                    background-color: $deepseablue;
+                    color: $white;
+                }
+            }
+
+            .iconUpDown {
+                cursor: pointer;
+
+                svg {
+                    padding: 5px;
+                    font-size: 30px;
+                    color: $deepseablue;
+                }
+            }
+        }
+    }
+
+    .select-total-page {
+        .select-option {
+            border-radius: 3px;
+            border: 1px solid $cathedralgray;
+            color: $warmgray;
+            height: 30px;
+        }
+
+        .text-show {
+            font-size: 15px;
+            font-weight: $font-weight-medium;
+            color: $warmgray;
+        }
+    }
+
+    &-item-search {
+        .button-drop-down {
+            &:deep(.dropdown-toggle) {
+                background: $waterblue;
+                border-radius: 10px;
+                border: none;
+            }
+        }
+
+        .input-search {
+            background: $white;
+            border: 1px solid $cathedralgray;
+            border-radius: 8px;
+            height: 35px;
+        }
+
+        .button-search {
+            background: $waterblue;
+            border-radius: 8px;
+            border: none;
+            height: 35px;
+            font-size: 15px;
+        }
+    }
+
+    &-table-job {
+        &:deep(.table-responsive) {
+            .table {
+                thead {
+                    tr th {
+                        font-size: 14px;
+                        text-align: center;
+                        background: $mediumpink;
+                        white-space: nowrap;
+                        border: none;
+                    }
+                }
+
+                tbody {
+                    tr td {
+                        font-weight: $font-weight-medium;
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .button-action {
+            border-radius: 25px;
+            color: $white;
+            height: 28px;
+            width: 28px;
+            font-size: 11px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button-detail {
+            background: $lightblue;
+        }
+
+        .button-edit {
+            background: $canary;
+        }
+
+        .button-remove {
+            background: $red;
+        }
+
+        .items-status {
+            .button-status {
+                padding: 3px 9px 3px 9px;
+                border: none;
+                border-radius: 10px;
+                border: none;
+                font-size: 12px;
+            }
+
+            .bg-green {
+                background: $lawngreen;
+            }
+
+            .bg-red {
+                background: $red;
+            }
+
+            .bg-blue {
+                background: $persianblue;
+            }
+
+            .bg-light-blue {
+                background: $blueactive;
+            }
+
+            .bg-yellow {
+                background: $canary;
+            }
+
+            .bg-violet {
+                background: $darkviolet;
+            }
+
+
+        }
+    }
+
+    &-input-type-date {
+
+        .input {
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        .label-time {
+            gap: 0 5px;
+            margin-bottom: 12px;
+            display: flex;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 5px;
+                height: 20px;
+                border-radius: 5px;
+                background-color: $waterblue;
+            }
+        }
+
+        .text-to {
+            font-weight: $font-weight-bold;
+            color: $warmgray;
+        }
+
+
+        &:deep(input[ type="date"]) {
+            background-image: url('~/assets/images/date.png');
+            color: $cathedralgray;
+            background-size: 23px;
+            background-position: 97%;
+            background-repeat: no-repeat;
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            opacity: 0;
+        }
+
+        input[type="date"]:focus::before,
+        input[type="date"]:valid::before {
+            display: none
+        }
+
+    }
+
+    &-message-search {
+        font-weight: $font-weight-bold;
+        font-size: 18px;
+        color: $redorange;
+    }
+
+    // custom css radio input
+    .bv-no-focus-ring:deep() {
+        line-height: 150%;
+
+        .custom-control-input:checked~.custom-control-label::before {
+            color: white;
+            border-color: #18c52f;
+            background-color: #18c52f;
+        }
+    }
+
+    .validate-form {
+        .error-text {
+            bottom: 60px;
+        }
+
+        .is-invalid {
+            padding-right: 0px !important;
+        }
+
+        .text-area {
+            bottom: 143px;
+        }
+    }
+
+    .btn-remove-step {
+        top: -0;
+        left: -40px;
+        margin-left: -60px;
+
+        @include screen(480) {
+            left: -30px;
+            margin-left: -30px;
+        }
+
+        cursor: pointer;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .hr-tag {
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .btn-file {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-file input[type='file'] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+    // custom css radio input
+    .bv-no-focus-ring:deep() {
+        line-height: 150%;
+
+        .custom-control-input:checked~.custom-control-label::before {
+            color: white;
+            border-color: $leafygreen;
+            background-color: $leafygreen;
+        }
+    }
+
+}
+
+#modal-xl___BV_modal_outer_ {
+    &:deep(.modal) {
+        .modal-dialog {
+            .modal-content {
+                .modal-header {
+                    border-bottom: none;
+                }
+
+                .modal-body {
+                    .text-description {
+                        font-size: 15px;
+                        font-weight: $font-weight-bold;
+                        color: $black;
+                        display: flex;
+
+                        &::before {
+                            content: '';
+                            background: $waterblue;
+                            display: block;
+                            height: 20px;
+                            border-radius: 10px;
+                            width: 5px;
+                            margin-right: 5px;
+                        }
+                    }
+
+                    .icon-people {
+                        color: $deepseablue;
+                        font-size: 25px;
+                    }
+
+                    .text-number {
+                        color: $deepseablue;
+                    }
+
+                    .text-label {
+                        font-weight: $font-weight-bold;
+                    }
+
+                    .button-push-more {
+                        color: $deepseablue;
+                        background: $white;
+                        border: 2px solid $deepseablue;
+                        border-radius: 20px;
+                        font-weight: $font-weight-bold;
+                    }
+                }
+
+                .modal-footer {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+#modal-slot___BV_modal_outer_ {
+    &:deep(.modal) {
+        .modal-dialog {
+            .modal-content {
+                .modal-header {
+                    border-bottom: none;
+
+                    .modal-title {
+                        text-align: center;
+                    }
+                }
+
+                .modal-body {
+                    .modal-slot {
+                        .title-slot {
+                            font-size: 25px;
+                            font-weight: $font-weight-bold-seven;
+                            margin-top: -35px;
+                            color: $deepseablue;
+                            text-transform: uppercase;
+                        }
+
+                        .text-number {
+                            color: $deepseablue;
+                            font-weight: $font-weight-bold;
+                        }
+
+                        .text-label {
+                            font-weight: $font-weight-bold;
+                        }
+
+                        .icon-people {
+                            color: $deepseablue;
+                            font-size: 25px;
+                        }
+
+                        input {
+                            height: 50px;
+                            border-radius: 10px;
+                        }
+
+                        .button-group {
+                            gap: 85px;
+
+                            .button-cancel {
+                                background: #D6D6D6;
+                                border: none;
+                                padding: 13px 60px;
+                                border-radius: 30px;
+                            }
+
+                            .button-confirm {
+                                background: #2680EB;
+                                border: none;
+                                padding: 13px 60px;
+                                border-radius: 30px;
+                            }
+                        }
+                    }
+                }
+
+                .modal-footer {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+#modal-remove___BV_modal_outer_ {
+    &:deep(.modal) {
+        .modal-dialog {
+            .modal-content {
+                border-radius: 10px;
+
+                .modal-header {
+                    padding: 10px 10px 0;
+                    border: none;
+
+                    .close {
+                        font-size: 40px;
+                        line-height: 15px;
+                        margin: 0;
+                        font-weight: $font-weight-medium;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                .modal-body {
+                    padding: 0 1rem 1rem;
+
+                    .title-modal {
+                        text-transform: uppercase;
+                        color: $deepseablue;
+                        font-weight: bold;
+                        font-size: 24px;
+
+                        span {
+                            color: $red;
+                        }
+                    }
+
+                    .reason-block-account {
+                        width: 80%;
+                        margin: 30px auto 0;
+                        border-color: $cathedralgray;
+                    }
+
+                    .group-btn {
+                        margin: 30px 0;
+
+                        button {
+                            border: none;
+                            border-radius: 50px;
+                            width: 25%;
+
+                            svg {
+                                margin-right: 5px;
+                            }
+                        }
+
+                        .btn-cancel {
+                            background-color: #d6d6d6;
+                            margin-right: 20px;
+                        }
+
+                        .btn-block-account {
+                            background-color: $lightred;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#remove-all___BV_modal_outer_ {
+    &:deep(.modal) {
+        .modal-dialog {
+            .modal-content {
+                border-radius: 10px;
+
+                .modal-header {
+                    padding: 10px 10px 0;
+                    border: none;
+
+                    .close {
+                        font-size: 40px;
+                        line-height: 15px;
+                        margin: 0;
+                        font-weight: $font-weight-medium;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                .modal-body {
+                    padding: 0 1rem 1rem;
+
+                    .title-modal {
+                        text-transform: uppercase;
+                        color: $deepseablue;
+                        font-weight: bold;
+                        font-size: 24px;
+
+                        span {
+                            color: $red;
+                        }
+                    }
+
+                    .reason-block-account {
+                        width: 80%;
+                        margin: 30px auto 0;
+                        border-color: $cathedralgray;
+                    }
+
+                    .group-btn {
+                        margin: 30px 0;
+
+                        button {
+                            border: none;
+                            border-radius: 50px;
+                            width: 25%;
+
+                            svg {
+                                margin-right: 5px;
+                            }
+                        }
+
+                        .btn-cancel {
+                            background-color: #d6d6d6;
+                            margin-right: 20px;
+                        }
+
+                        .btn-block-account {
+                            background-color: $lightred;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#modal-create___BV_modal_outer_ {
+    &:deep(.modal) {
+        .modal-dialog {
+            .modal-content {
+                .modal-header {
+                    border-bottom: none;
+                }
+
+                .modal-footer {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,352 @@
+.hrPaymentManagement {
+    .text-title {
+        font-weight: $font-weight-bold;
+        font-size: 22px;
+        letter-spacing: 1.2px;
+        color: $deepseablue;
+        text-transform: uppercase;
+    }
+
+    .item-body {
+        background: $white;
+        border-radius: 10px;
+    }
+
+    &-content {
+        transform-origin: top;
+        transition: transform 0.4s ease-in-out;
+
+        .search-account {
+            padding: 15px 20px;
+
+            .show-number-entries {
+                font-weight: $font-weight-medium;
+                color: $warmgray;
+
+                .select-option {
+                    color: $warmgray;
+                    border-radius: 5px;
+                    font-weight: $font-weight-medium;
+                }
+            }
+
+            .show-advanced-search {
+                margin: 0 auto;
+
+                .btn-confirming {
+                    margin-right: 30px;
+                    background-color: $cathedralgray;
+                    border-radius: 10px;
+                    color: $white;
+                    border: none;
+                    padding: 7px 10px;
+                }
+
+                .btn-yellow {
+                    margin-right: 30px;
+                    background-color: $canary;
+                    border-radius: 10px;
+                    color: $white;
+                    border: none;
+                    padding: 7px 10px;
+                }
+
+                .btn-show {
+                    background-color: $waterblue;
+                    color: $white;
+                    border-radius: 10px;
+                    padding: 7px 10px;
+                    border: none;
+                }
+            }
+
+            .input-search {
+                input {
+                    border-radius: 10px;
+                    border-color: $cathedralgray;
+                    color: $cathedralgray;
+
+                    &::placeholder {
+                        font-size: 12px;
+                    }
+                }
+
+                .icon-search {
+                    background-color: $waterblue;
+                    border-radius: 10px;
+                    height: 38px;
+                    width: 38px;
+                    margin-left: 10px;
+                    border: none;
+                }
+            }
+        }
+
+        .advanced-search {
+            column-gap: 60px;
+            row-gap: 20px;
+            padding: 0 20px;
+            transform-origin: top;
+            transition: transform 0.4s ease-in-out;
+
+            .item {
+                label {
+                    color: $waterblue;
+                    font-weight: $font-weight-medium;
+                }
+
+                input {
+                    border-radius: 10px;
+                    border-color: $cathedralgray;
+                    font-weight: $font-weight-medium;
+                    font-size: 14px;
+
+                    &::placeholder {
+                        font-size: 12px;
+                    }
+                }
+
+                .v-select {
+                    &:deep(.vs__dropdown-toggle) {
+                        border-radius: 10px;
+                    }
+                }
+
+                .b-form-btn-label-control.form-control {
+                    flex-direction: row-reverse;
+                    border-radius: 10px;
+                    border-color: $cathedralgray;
+                }
+
+                button {
+                    border-radius: 10px;
+                    font-size: 14px;
+                    white-space: nowrap;
+
+                    svg {
+                        margin-right: 5px;
+                    }
+                }
+
+                .btn-search {
+                    background: $deepseablue;
+                    margin-right: 10px;
+                    border: none;
+                }
+
+                .b-form-datepicker {
+                    height: 35px;
+                }
+            }
+
+            .button-submit {
+                margin-top: 35px;
+            }
+        }
+
+        .slide-enter,
+        .slide-leave-to {
+            transform: scaleY(0);
+        }
+    }
+
+    &-header {
+        padding: 15px 20px;
+        border-bottom: 2px solid $mediumpink;
+
+
+
+        .iconUpDown {
+            cursor: pointer;
+
+            svg {
+                padding: 5px;
+                font-size: 30px;
+                color: $deepseablue;
+            }
+        }
+
+    }
+
+    .select-total-page {
+        .select-option {
+            border-radius: 3px;
+            border: 1px solid $cathedralgray;
+            color: $warmgray;
+            height: 30px;
+        }
+
+        .text-show {
+            font-size: 15px;
+            font-weight: $font-weight-medium;
+            color: $warmgray;
+        }
+    }
+
+    &-item-search {
+        .button-drop-down {
+            &:deep(.dropdown-toggle) {
+                background: $waterblue;
+                border-radius: 10px;
+                border: none;
+            }
+        }
+
+        .input-search {
+            background: $white;
+            border: 1px solid $cathedralgray;
+            border-radius: 8px;
+            height: 35px;
+        }
+
+        .button-search {
+            background: $waterblue;
+            border-radius: 8px;
+            border: none;
+            height: 35px;
+            font-size: 15px;
+        }
+    }
+
+    &-table-job {
+
+        &:deep(.table-responsive) {
+            .table {
+                thead {
+                    tr th {
+                        font-size: 14px;
+                        text-align: center;
+                        background: $mediumpink;
+                        white-space: nowrap;
+                        border: none;
+                    }
+                }
+
+                tbody {
+                    tr td {
+                        font-weight: $font-weight-medium;
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
+
+        .button-action {
+            border-radius: 25px;
+            color: $white;
+            height: 28px;
+            width: 28px;
+            font-size: 11px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button-edit {
+            background: $canary;
+        }
+
+        .button-remove {
+            background: $red;
+        }
+
+        .items-status {
+            .button-status {
+                padding: 3px 9px 3px 9px;
+                border: none;
+                border-radius: 10px;
+                border: none;
+                font-size: 12px;
+            }
+
+            .bg-confirmed {
+                background: $leafygreen;
+            }
+
+            .bg-confirming {
+                background: $canary;
+            }
+        }
+    }
+
+    &-message-search {
+        font-weight: $font-weight-bold;
+        font-size: 18px;
+        color: $redorange;
+    }
+
+
+
+}
+
+#modal-remove___BV_modal_outer_ {
+    &:deep(.modal) {
+        .modal-dialog {
+            .modal-content {
+                border-radius: 10px;
+
+                .modal-header {
+                    padding: 10px 10px 0;
+                    border: none;
+
+                    .close {
+                        font-size: 40px;
+                        line-height: 15px;
+                        margin: 0;
+                        font-weight: $font-weight-medium;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                .modal-body {
+                    padding: 0 1rem 1rem;
+
+                    .title-modal {
+                        text-transform: uppercase;
+                        color: $deepseablue;
+                        font-weight: bold;
+                        font-size: 24px;
+
+                        span {
+                            color: $red;
+                        }
+                    }
+
+                    .reason-block-account {
+                        width: 80%;
+                        margin: 30px auto 0;
+                        border-color: $cathedralgray;
+                    }
+
+                    .group-btn {
+                        margin: 30px 0;
+
+                        button {
+                            border: none;
+                            border-radius: 50px;
+                            width: 25%;
+
+                            svg {
+                                margin-right: 5px;
+                            }
+                        }
+
+                        .btn-cancel {
+                            background-color: #d6d6d6;
+                            margin-right: 20px;
+                        }
+
+                        .btn-block-account {
+                            background-color: $lightred;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

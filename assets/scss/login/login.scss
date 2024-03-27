@@ -1,0 +1,160 @@
+.line {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #c3c3c3;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.line h2 {
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+  top: 15px;
+  color: #c3c3c3;
+  padding: 0 13px;
+  display: inline-block;
+  background: white;
+}
+
+.hrLogin {
+  background: transparent url("~/assets/images/login.png") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+
+  &-navbar-login {
+    background: white;
+    height: 70px;
+    width: 100%;
+  }
+
+  &-background-body {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    min-height: 150px;
+    width: 100%;
+    padding-bottom: 20px !important;
+  }
+
+  &-text-title {
+    text-align: center;
+    font: normal normal normal 20px/32px UTM Nokia;
+    letter-spacing: 0px;
+    color: #014783;
+  }
+
+  &-button-google {
+    border-radius: 25px;
+    width: 100%;
+    border: 1px solid #999191;
+  }
+
+  &-text-google {
+    font-size: 16px;
+    font-weight: $font-weight-normal;
+    color: $warmgray;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  &-form-submit {
+    &::deep(.form-group) {
+      .form-control {
+        height: 45px;
+        border-radius: 10px;
+      }
+    }
+
+    .label-input {
+      font-weight: $font-weight-bold;
+    }
+
+    .custom-input {
+      height: 45px;
+      border-radius: 5px;
+    }
+  }
+
+  &-submit-button {
+    background: $waterblue;
+    width: 320px;
+    height: 45px;
+    border-radius: 25px;
+  }
+
+  &-button-su {
+    width: 320px;
+    height: 45px;
+    color: #ffffff;
+    border-radius: 25px;
+    border: 1px solid $waterblue;
+  }
+
+  &-forgot {
+    text-align: left;
+    font-size: 14px;
+    font-weight: $font-weight-medium;
+    color: $pewterrgray;
+  }
+  &-signup {
+    text-align: left;
+    font-size: 14px;
+    font-weight: $font-weight-medium;
+    color: rgb(0, 119, 255);
+    text-decoration:underline rgb(0, 119, 255);;
+  }
+
+  &-item-body {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    border: 1px sold $waterblue;
+    margin-top: 30px;
+  }
+
+  &-text-item-body {
+    text-align: center;
+    font-size: 18px;
+    font-weight: $font-weight-normal;
+    color: $warmgray;
+  }
+
+  &-text-bold {
+    text-align: center;
+    font-size: 17px;
+    font-weight: $font-weight-bold;
+  }
+
+  &-person-icon {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    left: 10px;
+    color: $warmgray;
+  }
+
+  &-icon-google {
+    width: 25px;
+
+
+  }
+
+  &-key-icon {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    left: 10px;
+    color: $warmgray;
+  }
+}
+
+.form-group {
+  .form-control {
+    padding-left: 45px;
+    font-size: 16px;
+    font-weight: $font-weight-normal;
+    color: $warmgray;
+  }
+}

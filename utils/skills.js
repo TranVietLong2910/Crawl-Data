@@ -1,0 +1,33 @@
+export const skills = {
+  SKILLS: [
+    { value: 0, name: 'HTML' },
+    { value: 1, name: 'CSS' },
+    { value: 2, name: 'JavaScript' },
+    { value: 3, name: 'TypeScript' },
+    { value: 4, name: 'Python' },
+    { value: 5, name: 'Ruby' },
+    { value: 6, name: 'Java' },
+    { value: 7, name: 'WordPress' },
+    { value: 8, name: 'PHP' },
+    { value: 9, name: 'C#' },
+    { value: 10, name: 'IOS' },
+    { value: 11, name: 'ASP.NET' },
+    { value: 12, name: 'Android' },
+    { value: 13, name: 'Swift' },
+    { value: 14, name: 'Node.js' },
+    { value: 15, name: 'MySQL' },
+    { value: 16, name: 'Go' },
+    { value: 17, name: 'GitHub' },
+    { value: 18, name: 'Objective-C' },
+    { value: 19, name: 'Kotlin' },
+    { value: 20, name: 'Scala' },
+    { value: 21, name: 'Google Cloud Platform' },
+    { value: 22, name: 'Salesforce' },
+    { value: 23, name: 'Kintone' },
+    { value: 24, name: 'EC-CUBE' },
+    { value: 25, name: 'Shopify' },
+    { value: 26, name: 'Amazon Web Services' },
+    { value: 27, name: 'Flash' },
+    { value: 28, name: 'Microsoft Azure' }
+  ]
+}

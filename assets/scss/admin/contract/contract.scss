@@ -1,0 +1,661 @@
+.admin-contract-page {
+  .contract-mgmt {
+    border-radius: 10px;
+    background-color: $white;
+    margin-bottom: 20px;
+
+    .contract-mgmt-header {
+      padding: 15px 20px;
+      border-bottom: 2px solid #f5f5f5;
+
+      .contract-mgmt-header-left {
+        img {
+          height: 24px;
+          margin-right: 10px;
+        }
+
+        .title {
+          font-size: 18px;
+          text-transform: uppercase;
+          color: $deepseablue;
+          font-weight: 600;
+        }
+      }
+
+      .contract-mgmt-header-right {
+        .iconUpDown {
+          cursor: pointer;
+
+          svg {
+            padding: 5px;
+            font-size: 30px;
+            color: $deepseablue;
+          }
+        }
+      }
+    }
+
+    .contract-mgmt-content {
+      transform-origin: top;
+      transition: transform 0.4s ease-in-out;
+
+      .search-contract {
+        padding: 15px 20px;
+
+        @include screen(767) {
+          flex-direction: column;
+          row-gap: 15px;
+        }
+
+        .show-number-entries {
+          font-weight: 500;
+          color: $warmgray;
+
+          .select-option {
+            color: $warmgray;
+            border-radius: 5px;
+            font-weight: 500;
+          }
+        }
+
+        .show-advanced-search {
+          margin: 0 auto;
+
+          @include screen(991) {
+            margin: 0 10px;
+          }
+
+          .btn-show {
+            background-color: #2680eb;
+            color: $white;
+            border-radius: 10px;
+            border: none;
+            padding: 7px 10px;
+
+            svg {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .input-search {
+          input {
+            border-radius: 10px;
+            border-color: #c3c3c3;
+
+
+            &::placeholder {
+              color: #c3c3c3;
+            }
+          }
+
+          .icon-search {
+            background-color: #2680eb;
+            border-radius: 10px;
+            height: 38px;
+            width: 38px;
+            margin-left: 10px;
+
+            svg {
+              color: $white;
+            }
+          }
+        }
+      }
+
+      .advanced-search {
+        column-gap: 60px;
+        row-gap: 20px;
+        padding: 0 20px 20px;
+        transform-origin: top;
+        transition: transform 0.4s ease-in-out;
+        justify-content: space-between;
+        font-size: 14px;
+
+        @include screen(991) {
+          column-gap: 30px;
+          justify-content: unset;
+        }
+
+        .item {
+          width: calc((60% - 180px) / 3);
+
+          @include screen(991) {
+            width: calc((100% - 60px) / 3);
+          }
+
+          @include screen(767) {
+            width: 100%;
+          }
+
+          label {
+            color: #2680eb;
+            font-weight: 500;
+          }
+
+          input {
+            border-radius: 10px;
+            border-color: #c3c3c3;
+
+            font-weight: 500;
+            font-size: 14px;
+
+            &::placeholder {
+              color: #c3c3c3;
+              font-weight: 500;
+            }
+          }
+
+          --vs-border-radius: 10px;
+          --vs-border-color: #c3c3c3;
+          --vs-search-input-color: #c3c3c3;
+
+          .b-form-btn-label-control.form-control {
+            flex-direction: row-reverse;
+            border-radius: 10px;
+            border-color: #c3c3c3;
+          }
+
+          button {
+            border-radius: 10px;
+            font-size: 14px;
+            white-space: nowrap;
+            height: 35px;
+
+            svg {
+              margin-right: 5px;
+            }
+          }
+
+          .btn-search {
+            background: #014783;
+            margin-right: 10px;
+          }
+        }
+
+        .pickdate {
+          width: calc(40% - (180px / 4));
+
+          @include screen(991) {
+            width: calc(66% - 7px);
+          }
+
+          @include screen(767) {
+            width: 100%;
+
+            .date {
+              flex-direction: column;
+              row-gap: 5px;
+            }
+          }
+        }
+
+        .btn-container {
+          width: calc(40% - 45px);
+          justify-content: end;
+
+          @include screen(991) {
+            width: 100%;
+          }
+
+          @include screen(425767) {
+            justify-content: space-between;
+          }
+
+          @include screen(424) {
+            flex-direction: column;
+            row-gap: 5px;
+
+            button {
+              width: 100%;
+              justify-content: center;
+            }
+
+            .btn-search {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      .slide-enter,
+      .slide-leave-to {
+        transform: scaleY(0);
+      }
+
+    }
+
+
+
+    .slide-enter,
+    .slide-leave-to {
+      transform: scaleY(0);
+    }
+  }
+
+  &-table-contract {
+
+
+    &:deep(table) {
+
+
+      thead {
+        tr {
+          font-size: 13px;
+          background-color: #f5f5f5;
+
+          th {
+            white-space: nowrap;
+          }
+        }
+      }
+
+      tbody {
+        tr td {
+          font-weight: $font-weight-medium;
+          font-size: 13px;
+          text-align: center;
+          white-space: nowrap;
+
+          button {
+            border-radius: 50%;
+            font-size: 13px;
+            padding: 5px;
+            border: none;
+            background: #CAE2FF;
+          }
+
+          .status {
+            border-radius: 7px;
+            color: $white;
+            padding: 5px 5px;
+            width: 80px;
+            margin-bottom: 12px;
+          }
+
+          .bg-green {
+            background: $lawngreen;
+          }
+
+          .bg-red {
+            background: $red;
+          }
+
+          .bg-blue {
+            background: $persianblue;
+          }
+
+          .bg-light-blue {
+            background: $blueactive;
+          }
+
+          .bg-yellow {
+            background: $canary;
+          }
+
+          .bg-violet {
+            background: $darkviolet;
+          }
+        }
+      }
+    }
+
+  }
+
+  &-message-search {
+    font-weight: $font-weight-bold;
+    font-size: 18px;
+    color: $redorange;
+  }
+
+  .contract-statistical {
+    border-radius: 10px;
+    background-color: $white;
+
+    &-header {
+      padding: 15px 20px;
+      border-bottom: 2px solid #f5f5f5;
+
+      &-left {
+        img {
+          height: 18px;
+          margin-right: 10px;
+        }
+
+        .title {
+          font-size: 18px;
+          text-transform: uppercase;
+          color: $deepseablue;
+          font-weight: 600;
+        }
+
+        .select-chart {
+          min-width: 100px;
+          width: auto;
+          margin-left: 10px;
+        }
+
+        --vs-border-radius: 10px;
+        --vs-search-input-bg: #2680eb;
+        --vs-selected-color: #fff;
+        --vs-border-color: #fff;
+      }
+
+      &-right {
+        .iconUpDown {
+          cursor: pointer;
+
+          svg {
+            padding: 5px;
+            font-size: 30px;
+            color: $deepseablue;
+          }
+        }
+      }
+    }
+
+    &-content {
+      transform-origin: top;
+      transition: transform 0.4s ease-in-out;
+
+      .contract-statistical-detail {
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        width: 50%;
+        margin: 30px auto;
+        padding: 20px 0;
+
+        @include screen(991) {
+          flex-direction: column;
+        }
+
+        .items {
+          width: 50%;
+
+          @include screen(991) {
+            width: 100%;
+            padding: 10px 0;
+          }
+
+          .title {
+            color: #014783;
+            font-weight: 600;
+            margin-bottom: 30px;
+          }
+
+          .content {
+            font-weight: bold;
+            font-size: 30px;
+
+            .number {
+              font-size: 16px;
+              margin-left: 10px;
+            }
+          }
+
+          &:first-child {
+            border-right: 2px solid #c3c3c3;
+
+            @include screen(991) {
+              padding: 20px 0;
+              border-right: none;
+              border-bottom: 2px solid #c3c3c3;
+            }
+          }
+        }
+      }
+
+      .contract-statistical-chart {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #999191;
+        border-radius: 10px;
+
+        .chart-header {
+          &-left {
+            .title {
+              color: #3d3d3d;
+              font-weight: 700;
+              text-transform: uppercase;
+              font-size: 18px;
+            }
+
+            .subtitle {
+              color: $pewterrgray;
+            }
+          }
+        }
+      }
+    }
+
+    .slide-enter,
+    .slide-leave-to {
+      transform: scaleY(0);
+    }
+  }
+}
+
+#modal-contract-detail___BV_modal_outer_ {
+  &:deep(.modal) {
+    .modal-dialog {
+      .modal-content {
+        border-radius: 10px;
+
+        .modal-header {
+          padding: 10px 10px 0;
+          border: none;
+
+          .close {
+            font-size: 40px;
+            line-height: 15px;
+            margin: 0;
+            font-weight: 500;
+            padding: 0;
+            margin: 0;
+          }
+        }
+
+        .modal-body {
+          padding: 0 1rem 1rem;
+
+          .title-modal {
+            text-transform: uppercase;
+            color: #014783;
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 30px;
+          }
+
+          .content-modal {
+            font-size: 14px;
+
+            .custom-cols {
+              padding: 7px 7px;
+            }
+
+            .job-side {
+              border: 1px solid #707070;
+              border-radius: 10px;
+              padding: 20px 25px;
+              min-height: 350px;
+              height: 100%;
+
+              &-title {
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $deepseablue;
+                margin-bottom: 30px;
+                font-size: 16px;
+
+                img {
+                  height: 40px;
+                  width: 40px;
+                  margin-right: 5px;
+                }
+              }
+
+              &-items {
+                margin-bottom: 30px;
+                color: $black;
+
+                .name-items {
+                  position: relative;
+                  width: 30%;
+                  font-weight: bold;
+
+                  &::before {
+                    content: '';
+                    position: absolute;
+                    left: -10px;
+                    top: 1px;
+                    height: 18px;
+                    width: 5px;
+                    border-radius: 20px;
+                    background-color: $waterblue;
+                  }
+                }
+
+                .content-items {
+                  width: 70%;
+                  font-weight: 500;
+                }
+              }
+            }
+
+            .resource-side {
+              border: 1px solid #707070;
+              border-radius: 10px;
+              padding: 20px 25px;
+              min-height: 350px;
+              height: 100%;
+
+              &-title {
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $deepseablue;
+                margin-bottom: 30px;
+                font-size: 16px;
+
+                img {
+                  height: 40px;
+                  width: 40px;
+                  margin-right: 5px;
+                }
+              }
+
+              &-body {
+                .resource-side-items {
+                  width: 50%;
+                  margin-bottom: 30px;
+                  color: $black;
+
+                  .name-items {
+                    position: relative;
+                    width: 30%;
+                    font-weight: bold;
+                    margin-right: 5px;
+
+                    &::before {
+                      content: '';
+                      position: absolute;
+                      left: -10px;
+                      top: 1px;
+                      height: 18px;
+                      width: 5px;
+                      border-radius: 20px;
+                      background-color: $waterblue;
+                    }
+                  }
+
+                  .content-items {
+                    width: 70%;
+                    font-weight: 500;
+                  }
+                }
+              }
+            }
+
+            .contract-agreement {
+              border: 1px solid #707070;
+              border-radius: 10px;
+
+              &-title {
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $deepseablue;
+                margin-bottom: 30px;
+                font-size: 16px;
+
+                img {
+                  height: 40px;
+                  width: 40px;
+                  margin-right: 5px;
+                }
+              }
+
+              &-body {
+                font-weight: bold;
+
+                .body-left {
+                  .name-company {
+                    color: $warmgray;
+                    margin-bottom: 20px;
+                  }
+
+                  .status-contract {
+                    background-color: $leafygreen;
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                    width: fit-content;
+                    margin: 0 auto;
+                    color: $white;
+                  }
+                }
+
+                .body-right {
+                  .label {
+                    position: relative;
+
+                    &::before {
+                      content: '';
+                      position: absolute;
+                      left: -10px;
+                      background: $waterblue;
+                      height: 16px;
+                      border-radius: 10px;
+                      width: 5px;
+                    }
+                  }
+
+                  .contract-period {
+                    margin-bottom: 20px;
+
+                    span {
+                      color: $waterblue;
+                      font-weight: 500;
+                      margin-left: 5px;
+                    }
+
+                    .technology {
+                      color: $warmgray;
+                    }
+                  }
+
+                  .price {
+                    span {
+                      color: $waterblue;
+                      font-weight: 500;
+                      margin-left: 5px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

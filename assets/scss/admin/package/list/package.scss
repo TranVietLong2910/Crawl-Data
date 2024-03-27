@@ -1,0 +1,313 @@
+.hrPackage {
+    .text-title {
+        font-weight: $font-weight-bold;
+        font-size: 22px;
+        letter-spacing: 1.2px;
+        color: $deepseablue;
+        text-transform: uppercase;
+    }
+
+    .item-body {
+        background: $white;
+        border-radius: 10px;
+    }
+
+
+
+    &-header {
+        padding: 15px 20px;
+        border-bottom: 2px solid $mediumpink;
+
+        .btnNewAccount {
+            background-color: #e4f0ff;
+            color: $deepseablue;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 10px;
+            border: none;
+            margin-right: 20px;
+
+            &:hover {
+                background-color: $deepseablue;
+                color: $white;
+            }
+        }
+
+        .iconUpDown {
+            cursor: pointer;
+
+            svg {
+                padding: 5px;
+                font-size: 30px;
+                color: $deepseablue;
+            }
+        }
+
+    }
+
+    &-table-job {
+
+        &:deep(.table-responsive) {
+            .table {
+                thead {
+                    tr th {
+                        font-size: 14px;
+                        text-align: center;
+                        background: $mediumpink;
+                        white-space: nowrap;
+                        border: none;
+                    }
+                }
+
+                tbody {
+                    tr td {
+                        font-weight: $font-weight-medium;
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
+
+        .button-action {
+            border-radius: 25px;
+            color: $white;
+            height: 28px;
+            width: 28px;
+            font-size: 11px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button-edit {
+            background: $canary;
+        }
+
+        .button-remove {
+            background: $red;
+        }
+
+        .items-status {
+            .button-status {
+                padding: 3px 9px 3px 9px;
+                border: none;
+                border-radius: 10px;
+                border: none;
+                font-size: 12px;
+            }
+
+            .bg-confirmed {
+                background: $leafygreen;
+            }
+
+            .bg-confirming {
+                background: $canary;
+            }
+        }
+    }
+
+
+
+}
+
+#modal-remove___BV_modal_outer_ {
+    &:deep(.modal) {
+        .modal-dialog {
+            .modal-content {
+                border-radius: 10px;
+
+                .modal-header {
+                    padding: 10px 10px 0;
+                    border: none;
+
+                    .close {
+                        font-size: 40px;
+                        line-height: 15px;
+                        margin: 0;
+                        font-weight: $font-weight-medium;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                .modal-body {
+                    padding: 0 1rem 1rem;
+
+                    .title-modal {
+                        text-transform: uppercase;
+                        color: $deepseablue;
+                        font-weight: bold;
+                        font-size: 24px;
+
+                        span {
+                            color: $red;
+                        }
+                    }
+
+                    .reason-block-account {
+                        width: 80%;
+                        margin: 30px auto 0;
+                        border-color: $cathedralgray;
+                    }
+
+                    .group-btn {
+                        margin: 30px 0;
+
+                        button {
+                            border: none;
+                            border-radius: 50px;
+                            width: 25%;
+
+                            svg {
+                                margin-right: 5px;
+                            }
+                        }
+
+                        .btn-cancel {
+                            background-color: #d6d6d6;
+                            margin-right: 20px;
+                        }
+
+                        .btn-block-account {
+                            background-color: $lightred;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#modal-create___BV_modal_outer_ {
+    &:deep(.modal) {
+        .modal-dialog {
+            .modal-content {
+                .modal-header {
+                    border-bottom: none;
+                }
+
+                .modal-body {
+                    .title-header {
+                        font-size: 27px;
+                        font-weight: $font-weight-bold-seven;
+                        color: $deepseablue;
+                        text-transform: uppercase;
+                    }
+
+                    .image-input {
+                        transform: translate(-50px, -50px);
+                        top: 92%;
+                        right: -39px;
+                    }
+
+                    .validate-form {
+                        .error-text {
+                            bottom: calc(100% + 3px);
+                        }
+                    }
+
+                    .input-price {
+                        top: 38%;
+                        right: 15px;
+                        color: $warmgray;
+                        font-weight: $font-weight-medium;
+                    }
+
+                    input {
+                        border-radius: 10px;
+                        height: 50px;
+                    }
+
+                    .button-submit {
+                        gap: 40px;
+
+                        .button-cancel {
+                            background: #D6D6D6;
+                            border: none;
+                            padding: 15px 75px;
+                        }
+
+                        .button-create {
+                            background: $waterblue;
+                            border: none;
+                            padding: 15px 75px;
+                        }
+                    }
+                }
+
+                .modal-footer {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+#modal-edit___BV_modal_outer_ {
+    &:deep(.modal) {
+        .modal-dialog {
+            .modal-content {
+                .modal-header {
+                    border-bottom: none;
+                }
+
+                .modal-body {
+                    .title-header {
+                        font-size: 27px;
+                        font-weight: $font-weight-bold-seven;
+                        color: $deepseablue;
+                        text-transform: uppercase;
+                    }
+
+                    .image-input {
+                        transform: translate(-50px, -50px);
+                        top: 92%;
+                        right: -39px;
+                    }
+
+                    .validate-form {
+                        .error-text {
+                            bottom: calc(100% + 3px);
+                        }
+                    }
+
+                    .input-price {
+                        top: 38%;
+                        right: 15px;
+                        color: $warmgray;
+                        font-weight: $font-weight-medium;
+                    }
+
+                    input {
+                        border-radius: 10px;
+                        height: 50px;
+                    }
+
+                    .button-submit {
+                        gap: 40px;
+
+                        .button-cancel {
+                            background: #D6D6D6;
+                            border: none;
+                            padding: 15px 75px;
+                        }
+
+                        .button-create {
+                            background: $waterblue;
+                            border: none;
+                            padding: 15px 75px;
+                        }
+                    }
+                }
+
+                .modal-footer {
+                    display: none;
+                }
+            }
+        }
+    }
+}

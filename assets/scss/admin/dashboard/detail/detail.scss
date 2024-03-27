@@ -1,0 +1,160 @@
+.hrJobDetail {
+    &-item-body {
+        background: $white;
+        border-radius: 15px;
+
+        .button-back {
+            background: #f5f5f5;
+            border-radius: 15px;
+            border: none;
+            color: #666565;
+            font-size: 15px;
+            font-weight: $font-weight-bold;
+        }
+
+        .statistical {
+            transform: translate(10px, 10px);
+            top: 35%;
+            left: 8%;
+
+            .text-number {
+                font-size: 33px;
+
+                @include screen(767) {
+                    font-size: 23px;
+                }
+            }
+
+            .text-total {
+                font-size: 15px;
+
+                @include screen(767) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .background-progress {
+        border: 2px solid #707070;
+        border-radius: 15px;
+        height: 100%;
+
+        .title-progress {
+            font-size: 18px;
+            font-weight: $font-weight-bold;
+            color: $hexblue;
+        }
+
+        .title-chart {
+            font-size: 19px;
+            font-weight: $font-weight-bold-seven;
+            color: $hexblue;
+        }
+
+        .text-content {
+            font-size: 15px;
+            font-weight: $font-weight-medium;
+            color: #999191;
+        }
+
+        .border-logo {
+            width: 55px;
+            height: 35px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-right: 12px solid white;
+                border-top: 20px solid transparent;
+                border-bottom: 15px solid transparent;
+            }
+        }
+
+        .text-color {
+            color: $deepseablue;
+        }
+
+        .orange {
+            background: #FF8900;
+        }
+
+        .light-blue {
+            background: #1BD6FF;
+        }
+
+        .black {
+            background: #4F4F4F;
+        }
+
+        .blue {
+            background: #0955C6;
+        }
+
+        .violet {
+            background: #A948F4;
+        }
+
+        .text-language {
+            font-size: 14px;
+            font-weight: $font-weight-bold;
+            color: #707070;
+        }
+    }
+
+    &-progress-black {
+        .progress {
+            height: 10px;
+
+            &:deep(.progress-bar) {
+                background: #4F4F4F;
+            }
+        }
+    }
+
+    &-progress-orange {
+        .progress {
+            height: 10px;
+
+            &:deep(.progress-bar) {
+                background: #FF8900;
+            }
+        }
+    }
+
+    &-progress-blue {
+        .progress {
+            height: 10px;
+
+            &:deep(.progress-bar) {
+                background: #0955C6;
+            }
+        }
+    }
+
+    &-progress-light-blue {
+        .progress {
+            height: 10px;
+
+            &:deep(.progress-bar) {
+                background: #1BD6FF;
+            }
+        }
+    }
+
+    &-progress-violet {
+        .progress {
+            height: 10px;
+
+            &:deep(.progress-bar) {
+                background: #A948F4;
+            }
+        }
+    }
+
+}

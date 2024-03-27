@@ -1,0 +1,30 @@
+@mixin hoverItemNav($el) {
+  background-color: #2680eb;
+  > #{$el} {
+    color: $white;
+  }
+}
+@mixin container {
+  width: 90%;
+  margin: 0 auto;
+}
+@mixin borderTextField {
+  border: 1px solid $gray-400;
+  padding-left: 12px;
+  border-radius: 12px;
+}
+
+@mixin headerTitle {
+  color: $deepseablue;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+@mixin titleForm {
+  color: $waterblue;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+@mixin bannerDetail {
+  background: url(~/assets/images/detail.png) no-repeat center center;
+  background-size: cover;
+}

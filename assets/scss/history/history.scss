@@ -1,0 +1,262 @@
+.hrHistory {
+    &-title-history {
+        text-align: center;
+        font-weight: $font-weight-bold-seven;
+        color: $deepseablue;
+        text-transform: uppercase;
+        font-size: 32px;
+    }
+
+    .item-body {
+        background: $white;
+        border-radius: 10px;
+
+        &-title {
+            font-size: 25px;
+            font-weight: $font-weight-bold-seven;
+            color: $warmgray;
+        }
+
+        &-company-info {
+            .text-address {
+                font-weight: $font-weight-bold-seven;
+                color: #424242;
+                font-size: 18px;
+            }
+
+            .company {
+                font-weight: $font-weight-normal;
+                font-size: 14px;
+            }
+
+            .text-rank {
+                font-size: 15px;
+                font-weight: $font-weight-medium;
+            }
+
+            .text-label {
+                font-weight: $font-weight-medium;
+            }
+        }
+
+        &-point-having {
+            .text-having {
+                font-size: 16px;
+                color: $warmgray;
+                font-weight: $font-weight-bold;
+            }
+
+            .text-number {
+                font-size: 33px;
+                color: $mediumblue;
+                font-weight: $font-weight-bold-seven;
+            }
+
+            .text-point {
+                font-weight: $font-weight-bold-seven;
+                color: $warmgray;
+                font-size: 21px;
+            }
+
+        }
+
+        .title-package {
+            font-weight: $font-weight-medium;
+            color: $warmgray;
+            font-size: 23px;
+
+            .text-hr {
+                color: $waterblue;
+                font-weight: $font-weight-bold;
+            }
+        }
+
+        &-hr-package {
+            .text-package {
+                font-weight: $font-weight-bold-seven;
+                font-size: 19px;
+                color: $mediumblue;
+            }
+
+            .item {
+                border: 2px solid $waterblue;
+                border-radius: 20px;
+                height: 100%;
+            }
+
+            .number-package {
+                color: $mediumblue;
+                font-weight: $font-weight-bold-seven;
+                font-size: 29px;
+            }
+
+            .duration {
+                font-weight: $font-weight-medium;
+                font-size: 14px;
+            }
+
+            .button {
+                border: 2px solid $waterblue;
+                background: $white;
+                color: $waterblue;
+                padding: 3px 10px;
+            }
+
+            .information_package {
+                text-align: center;
+                font-weight: $font-weight-bold;
+                font-size: 14px;
+                color: $warmgray;
+
+            }
+        }
+    }
+
+    .item-history {
+        background: $white;
+        border-radius: 10px;
+
+        .text-status {
+            font-size: 16px;
+            font-weight: $font-weight-medium;
+            color: $deepseablue;
+
+        }
+
+        .title-history {
+            font-weight: $font-weight-bold-seven;
+            font-size: 25px;
+            color: $warmgray;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+
+            button {
+                border: none;
+                text-align: center;
+                border-radius: 7px;
+                width: 100%;
+                font-size: 11px;
+                color: $white;
+                height: 17px;
+                display: flex;
+                padding: 12px 13px 12px 13px;
+                align-items: center;
+                justify-content: center;
+                white-space: nowrap;
+            }
+
+            .button {
+                background-color: #c3c3c3;
+
+            }
+
+            .button:focus {
+                background: $waterblue;
+            }
+        }
+
+        .text-advanced {
+            color: $warmgray;
+            font-weight: $font-weight-bold-seven;
+            font-size: 18px;
+
+        }
+
+        .iconUpDown {
+            color: $warmgray;
+        }
+
+
+
+        .text-label {
+            font-size: 16px;
+            font-weight: $font-weight-medium;
+            color: $waterblue;
+
+        }
+
+        &-button-submit {
+            margin-top: 30px;
+
+            .btn-search {
+                background: $deepseablue;
+                border: none;
+                border-radius: 10px;
+                font-size: 15px;
+
+                svg {
+                    font-size: 13px;
+                }
+            }
+
+            .btn-clear {
+                border: none;
+                border-radius: 10px;
+                font-size: 15px;
+
+                svg {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        &-input-item {
+            input {
+                border-radius: 10px;
+                height: 40px;
+            }
+
+            .b-form-btn-label-control.form-control {
+                flex-direction: row-reverse;
+                border-radius: 10px;
+                border-color: $cathedralgray;
+                font-size: 15px;
+                height: 40px;
+            }
+        }
+
+        &-list-item {
+            .text-sharing {
+                font-weight: $font-weight-medium;
+                font-size: 14px;
+            }
+
+            .text-date {
+                font-weight: $font-weight-bold-seven;
+                color: black;
+                font-size: 14px;
+            }
+
+            .text-content {
+                font-weight: $font-weight-bold;
+                font-size: 13px;
+            }
+
+            .text-title {
+                color: $warmgray;
+                font-weight: $font-weight-bold;
+                font-size: 16px;
+
+            }
+
+            .text-green {
+                color: $leafygreen;
+                font-weight: $font-weight-bold-seven;
+            }
+
+            .text-red {
+                color: $red;
+                font-weight: $font-weight-bold-seven;
+            }
+
+            .point-having {
+                color: $warmgray;
+                font-weight: $font-weight-bold-seven;
+            }
+        }
+
+    }
+}

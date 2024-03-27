@@ -1,0 +1,154 @@
+.hrLogin {
+    height: 100%;
+    background: transparent url('~/assets/images/login.png') 0% 0% no-repeat padding-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    &-navbar-login {
+        background: white;
+        height: 70px;
+        width: 100%;
+    }
+
+    &-background-body {
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border-radius: 20px;
+        min-height: 150px;
+        width: 100%;
+    }
+
+    &-text-title {
+        text-align: center;
+        font: normal normal normal 20px/32px UTM Nokia;
+        color: $deepseablue;
+    }
+
+    &-border-button {
+        border-radius: 2px solid $warmgray;
+    }
+
+    &-button-google {
+        border-radius: 25px;
+        border: 1px solid #999191;
+    }
+
+    &-text-google {
+        font-size: 16px;
+        font-weight: $font-weight-normal;
+        color: $warmgray;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+
+    &-form-submit {
+        &:deep(.form-group) {
+            .form-control {
+                height: 45px;
+                border-radius: 10px;
+            }
+        }
+
+        .label-input {
+            font-weight: $font-weight-bold;
+        }
+    }
+
+    &-message-email {
+        font-size: 15px;
+        font-weight: $font-weight-medium;
+        color: $warmgray;
+    }
+
+    &-button-group {
+        .send-email {
+            border: none;
+            background: $waterblue;
+            color: $white;
+            font-weight: $font-weight-medium;
+            border-radius: 25px;
+            width: 320px;
+            height: 45px;
+        }
+    }
+
+    &-submit-button {
+        background: $waterblue;
+        width: 100%;
+        height: 49px;
+        border-radius: 25px;
+        color: #FFFF;
+    }
+
+    &-text-already {
+        text-align: center;
+        font-size: 16px;
+        font-weight: $font-weight-normal;
+        color: $warmgray;
+    }
+
+    &-icon-eye {
+        right: 10px;
+        top: 68%;
+        transform: translateY(-50%);
+        color: #999191;
+    }
+
+    &-input-name {
+        gap: 10px;
+    }
+
+    &-text-checkbox {
+        font-size: 15px;
+        font-weight: $font-weight-medium;
+        color: $warmgray;
+    }
+
+    &-icon-google {
+        width: 25px;
+    }
+
+    &-text-checkbox-link {
+        font-size: 14px;
+        font-weight: $font-weight-normal;
+        color: $warmgray;
+    }
+
+    &-text-blue {
+        font-weight: $font-weight-bold;
+        font-size: 14px;
+        color: $waterblue;
+    }
+
+    &-checkbox {
+        &:deep(.custom-checkbox) {
+            .custom-control-input:checked~.custom-control-label::before {
+                color: #fff;
+                border-color: $leafygreen;
+                background-color: $leafygreen;
+            }
+        }
+    }
+}
+
+.vs--searchable {
+    &:deep(.vs__dropdown-toggle) {
+        height: 47px;
+        border-radius: 12px;
+
+        .vs__selected-options {
+            font-weight: $font-weight-normal;
+            font-size: 13px;
+        }
+    }
+}
+
+
+
+
+
+.validate-form {
+    .error-text {
+        bottom: 55px;
+    }
+}

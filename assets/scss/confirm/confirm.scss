@@ -1,0 +1,331 @@
+.hrConfirm {
+    background: #f1f2f4 0% 0% no-repeat padding-box;
+    opacity: 1;
+
+    &-title-confirm {
+        text-align: center;
+        font: normal normal bold 30px/35px UTM Avo;
+        letter-spacing: 1.8px;
+        color: $deepseablue;
+        text-transform: uppercase;
+    }
+
+    &-label {
+        border-left: 5px solid $waterblue;
+        height: 20px;
+        border-radius: 3px;
+        margin-top: 2px;
+    }
+
+    &-text-description {
+        text-align: left;
+        font-size: 17px;
+        line-height: 30px;
+        font-weight: $font-weight-bold;
+        color: #000000;
+    }
+
+    &-text {
+        font-size: 15px;
+        font-weight: $font-weight-normal;
+        line-height: 25px;
+        color: #000000;
+    }
+
+    &-text-title {
+        font-size: 27px;
+        font-weight: $font-weight-bold-seven;
+        color: #000000;
+        text-transform: uppercase;
+    }
+
+    &-text-it {
+        font-size: 14px;
+        font-weight: $font-weight-normal;
+        color: $warmgray;
+    }
+
+    &-icon-gear {
+        color: $white;
+    }
+
+    &-text-settings {
+        font-size: 18px;
+        font-weight: $font-weight-bold;
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    &-background-setting {
+        background: $deepseablue 0% 0% no-repeat padding-box;
+        border-radius: 0px 15px 0px 0px;
+        width: 100%;
+        height: 40px;
+
+        @include screen(240320) {
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        @include screen(320374) {
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        @include screen(375424) {
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        @include screen(425767) {
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        @include screen(768991) {
+            border-radius: 15px 15px 0px 0px;
+        }
+    }
+
+    &-text-time {
+        font-size: 15px;
+        font-weight: $font-weight-bold;
+        color: $pewterrgray;
+    }
+
+    &-icon-circle {
+        font-size: 28px;
+        color: $pewterrgray;
+    }
+
+    &-text-date {
+        margin-left: 6px;
+        font-size: 17px;
+        font-weight: $font-weight-normal;
+        color: $warmgray;
+    }
+
+    &-text-default {
+        text-align: center;
+        font-size: 16px;
+        font-weight: $font-weight-normal;
+        color: #797979;
+        padding-bottom: 6px;
+    }
+
+    &-point {
+        font-weight: $font-weight-bold;
+        font-size: 19px;
+        color: $deepseablue;
+    }
+
+    &-text-point {
+        font-weight: $font-weight-normal;
+        font-size: 15px;
+        color: $deepseablue;
+    }
+
+    &-text-having {
+        text-align: center;
+        font-size: 16px;
+        font-weight: $font-weight-bold;
+        color: $warmgray;
+    }
+
+    &-point-checkout {
+        font-weight: $font-weight-bold-seven;
+        font-size: 15px;
+        color: $warmgray;
+    }
+
+    &-text-point-checkout {
+        font-size: 14px;
+        font-weight: $font-weight-bold;
+        letter-spacing: 0px;
+        color: $warmgray;
+    }
+
+    &-point-checkout-blue {
+        font-weight: $font-weight-bold-seven;
+        font-size: 27px;
+        color: $mediumblue;
+    }
+
+    &-dropdown {
+        background: $waterblue 0% 0% no-repeat padding-box;
+        border-radius: 10px 2px 2px 10px;
+    }
+
+    &-click-dropdown {
+        font-size: 16px;
+        font-weight: $font-weight-medium;
+        color: $pewterrgray;
+    }
+
+    &-bg-back {
+        background: $white 0% 0% no-repeat padding-box;
+        border-radius: 20px;
+        width: 80px;
+        height: 30px;
+    }
+
+    &-button-back {
+        border-radius: 20px;
+        font-weight: $font-weight-medium;
+        color: #2F2F2F;
+        border: none;
+        background: white;
+    }
+
+    &-icon-file {
+        color: white;
+        top: 17px;
+        left: 45px;
+    }
+
+    &-border-left {
+        border-left: 1px solid #dee2e6;
+        border-radius: 15px 15px 15px 0px;
+
+        @include screen(240320) {
+            border-radius: 15px;
+        }
+
+        @include screen(320374) {
+            border-radius: 15px;
+        }
+
+        @include screen(375424) {
+            border-radius: 15px;
+        }
+
+        @include screen(425767) {
+            border-radius: 15px;
+        }
+
+        @include screen(768991) {
+            border-radius: 15px;
+        }
+    }
+
+    &-border-item {
+        border-radius: 15px 0px 0px 15px;
+
+        @include screen(240320) {
+            border-radius: 15px;
+        }
+
+        @include screen(320374) {
+            border-radius: 15px;
+        }
+
+        @include screen(375424) {
+            border-radius: 15px;
+        }
+
+        @include screen(425767) {
+            border-radius: 15px;
+        }
+
+        @include screen(768991) {
+            border-radius: 15px;
+        }
+    }
+
+    &-border-radius {
+        border-radius: 12px;
+    }
+
+    &-item-dropdown {
+        &:deep(.btn-group) {
+            .btn-outline {
+                background: $waterblue 0% 0% no-repeat padding-box;
+                border-right: 2px solid white;
+                border-radius: 10px 2px 2px 10px;
+                font-size: 15px;
+                font-weight: $font-weight-bold;
+                color: $white;
+                padding-left: 27px;
+                width: 200px;
+            }
+
+            .dropdown-toggle {
+                background: $waterblue 0% 0% no-repeat padding-box;
+                border-radius: 0px 10px 10px 0px;
+            }
+        }
+
+    }
+}
+
+#modal-center___BV_modal_outer_ {
+    &:deep(.modal) {
+        .modal-dialog {
+            .modal-content {
+                border-radius: 15px;
+
+                .modal-header {
+                    border-bottom: none;
+
+                    .modal-title {
+                        font-weight: $font-weight-bold-seven;
+                        font-size: 22px;
+                        color: #666565;
+                    }
+                }
+
+                .modal-body {
+                    .text-body {
+                        font-size: 16px;
+                        font-weight: $font-weight-medium;
+                        color: #666565 !important;
+                    }
+
+                    .text-modal {
+                        font-weight: $font-weight-medium;
+                        font-size: 15px;
+                        color: #666565;
+                    }
+
+                    .border-item {
+                        border: 1px solid #F1f2f4;
+                        border-radius: 5px;
+                    }
+
+                    .message {
+                        font-weight: $font-weight-normal;
+                        font-size: 15px;
+                        color: #FF0000;
+                        padding-bottom: 70px;
+                    }
+
+                    .common-button {
+                        border-radius: 15px;
+                    }
+
+                    .button-cancel {
+                        background: #EEEEEE 0% 0% no-repeat padding-box;
+                        border: none;
+                    }
+
+                    .button-save {
+                        background: $waterblue 0% 0% no-repeat padding-box;
+                        border: none;
+                    }
+
+                    .text-save {
+                        font-size: 16px;
+                        font-weight: $font-weight-bold;
+                        color: #FFFFFF;
+                    }
+
+                    .text-cancel {
+                        font-size: 16px;
+                        font-weight: $font-weight-bold;
+                        color: $warmgray;
+                    }
+                }
+
+                .modal-footer {
+                    display: none;
+                }
+            }
+        }
+    }
+}
